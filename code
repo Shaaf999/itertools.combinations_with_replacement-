@@ -1,0 +1,18 @@
+#method1
+import itertools
+from itertools import combinations_with_replacement
+s,k=input().split(' ')
+for i in list(combinations_with_replacement(sorted(s),int(k))):
+  print(''.join(i))
+  
+  #method2
+  import itertools
+from itertools import combinations_with_replacement
+sk= input().split()
+s=sk[0]
+k=int(sk[1])
+wrds=(list(itertools.combinations_with_replacement(sorted(s),k)))
+for i in wrds:
+    for j in i:
+        print(j, end='')
+    print()
